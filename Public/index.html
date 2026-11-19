@@ -22,6 +22,7 @@
         --primary-back: black;
         --section-width-us: 75%;
         --hover-btn-show-color: rgb(167, 167, 167);
+        --hover-btn-show-color-two: rgba(167, 167, 167, 0.19);
         --social-link-color: rgba(117, 116, 116, 0.19);
         --social-link-hvr-color: rgba(68, 67, 67, 0.555);
         --media-query: 0 1.4rem;
@@ -63,48 +64,61 @@
                             <a class="text-white text-[.8rem] font-normal " href="#">Uber eats</a>
                         </li>
                         <li
-                            class="relative group pl-[.7rem] pr-[.7rem] pt-[.3rem] pb-[.3rem] rounded-[1rem] bg-[var(--social-link-color)] select-none cursor-pointer">
+                            class="relative group pl-[.7rem] pr-[.7rem] pt-[.4rem] pb-[.4rem] rounded-[1rem] bg-[var(--social-link-color)] select-none cursor-pointer">
                             <input type="checkbox" class="peer hidden" id="for-ul-nav-shenavar">
-                            <label for="for-ul-nav-shenavar" class="flex items-center justify-between gap-1 cursor-pointer text-white text-[.8rem] font-normal">
+                            <label for="for-ul-nav-shenavar"
+                                class="flex items-center justify-between gap-1 cursor-pointer text-white text-[.8rem] font-normal">
                                 About<i
                                     class="fa-solid fa-chevron-down text-[white] ease-in duration-75 group-has-[:checked]:rotate-x-[-180deg]"></i>
                                 <nav
-                                    class="absolute w-[13rem] top-[50px] left-0 linear duration-200 backdrop-blur-[5px]  invisible opacity-0 group-has-[:checked]:visible group-has-[:checked]:opacity-[1] rounded-[.3rem] bg-[black] pl-0 pr-0 pt-[.5rem] pb-[.5rem]">
+                                    class="absolute w-[13rem] top-[50px] left-0 linear duration-200 backdrop-blur-[5px]  invisible opacity-0 group-has-[:checked]:visible group-has-[:checked]:opacity-[1] rounded-[.3rem] bg-[white] pl-0 pr-0 pt-[.5rem] pb-[.5rem]">
                                     <ul class="">
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">About us</a></li>
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">Our offerings</a></li>
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">How Uber Works</a></li>
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">Sustanability</a></li>
-                                        <li
-                                            class="group/menu-inside w-full flex items-center justify-between">
+                                        <li class="group/menu-inside w-full flex items-center justify-between">
                                             <input type="checkbox" class="hidden" id="secound-nav-shenavar">
-                                            <label class="flex items-center justify-between w-full cursor-pointer relative pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]" for="secound-nav-shenavar">Explore <i class="fa-solid fa-chevron-down rotate-[90deg] group-has-[:checked]/menu-inside:rotate-[-90deg]"></i>
-                                                <nav class="absolute left-[14.5rem] top-[0] w-[13rem] invisible opacity-0 ease-in-out duration-200 bg-[black] pl-0 pr-0 pt-[.5rem] pb-[.5rem] rounded-[.3rem] group-has-[:checked]/menu-inside:visible group-has-[:checked]/menu-inside:opacity-100">
+                                            <label
+                                                class="flex items-center justify-between w-full cursor-pointer relative pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"
+                                                for="secound-nav-shenavar">Explore <i
+                                                    class="fa-solid fa-chevron-down rotate-[90deg] ease-in duration-200 group-has-[:checked]/menu-inside:rotate-[-90deg]"></i>
+                                                <nav
+                                                    class="absolute left-[14.5rem] top-[0] w-[13rem] invisible opacity-0 ease-in-out duration-200 bg-[white] pl-0 pr-0 pt-[.5rem] pb-[.5rem] rounded-[.3rem] group-has-[:checked]/menu-inside:visible group-has-[:checked]/menu-inside:opacity-100">
                                                     <ul>
-                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#" class="text-[.9rem]"></a>Getting around gent</li>
-                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#" class="text-[.9rem]"></a>Getting around gent</li>
-                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#" class="text-[.9rem]"></a>Getting around gent</li>
-                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#" class="text-[.9rem]"></a>Getting around gent</li>
+                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
+                                                            <a href="#" class="text-[.9rem] text-black"></a>Getting around gent
+                                                        </li>
+                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
+                                                            <a href="#" class="text-[.9rem] text-black "></a>Getting around gent
+                                                        </li>
+                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
+                                                            <a href="#" class="text-[.9rem] text-black "></a>Getting around gent
+                                                        </li>
+                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
+                                                            <a href="#" class="text-[.9rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"></a>Getting around gent
+                                                        </li>
                                                     </ul>
                                                 </nav>
                                             </label>
                                         </li>
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">Newsroom</a></li>
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">Investor relations</a></li>
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">Autonomouse</a></li>
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">Merchants</a></li>
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">Blog</a></li>
-                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"><a href="#"
                                                 class="text-[.9rem]">Careers</a></li>
+                                    </ul>
                                 </nav>
                             </label>
                         </li>
@@ -115,12 +129,12 @@
                 <div
                     class="pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] ease-in duration-[.2s] flex items-center justify-center gap-1 hover:bg-[var(--header-hover-btn)] rounded-4xl">
                     <label for="for-language-changes"
-                        class="flex items-center justify-between gap-0.5 select-none group font-bold text-white text-[.9rem]"><i
+                        class="flex items-center justify-between gap-0.5 select-none group font-bold text-white text-[.9rem] cursor-pointer"><i
                             class="fa-solid fa-earth-americas text-[.9rem]"></i>EN
                     </label>
                     <input type="checkbox" id="for-language-changes" class="peer hidden">
                     <div
-                        class="fixed overflow-hidden invisible [clip-path:circle(5%_at_top_right)] opacity-0 ease-out duration-[.3s] top-[65px] left-[50%] translate-x-[-50%] w-full h-full pl-[15rem] pr-[15rem] pt-[7rem] pb-[7rem] peer-checked:opacity-[1] peer-checked:visible peer-checked:[clip-path:circle(100%_at_center)]">
+                        class="fixed z-10 bg-white overflow-hidden invisible [clip-path:circle(5%_at_top_right)] opacity-0 ease-out duration-[.3s] top-[65px] left-[50%] translate-x-[-50%] w-full h-full pl-[15rem] pr-[15rem] pt-[7rem] pb-[7rem] peer-checked:opacity-[1] peer-checked:visible peer-checked:[clip-path:circle(100%_at_center)]">
                         <div class="w-[50%] flex flex-col gap-20">
                             <h1 class="text-black text-[2rem] font-bold">Select your preferred language</h1>
                             <div class="flex items-center justify-center gap-[2rem] w-fit">
