@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber</title>
+    <link rel="stylesheet" href="../Public/style/style.css">
+    <link rel="stylesheet" href="../fontawesome-free-7.3.1-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    :root {
+        --primary-back-hover-color: rgb(0, 0, 0, .9);
+        --primary-back: black;
+        --section-width-us: 75%;
+        --hover-btn-show-color: rgb(167, 167, 167);
+        --social-link-color: rgba(117, 116, 116, 0.19);
+        --social-link-hvr-color: rgba(68, 67, 67, 0.555);
+        --media-query: 0 1.4rem;
+        --hambergur-menu: 1.5rem 1.5rem;
+        --header-responsivmode-padding: 1rem 1.4rem;
+        --header-hover-btn: rgba(75, 74, 74, 0.76)
+    }
+
+    body {
+        font-family: "Clarity City";
+    }
+</style>
+
+<body>
+    <header class="flex justify-center items-center bg-[black]">
+        <div class="flex justify-between items-center w-[83%] pt-[.8rem] pb-[.8rem] pl-[0] pr-[0]">
+            <div class="">
+                <nav>
+                    <ul class="flex items-center justify-center gap-[.4rem]">
+                        <li class="pb-[.2rem] mr-[1rem]"><a class="text-[white] text-[1.5rem]" href="#">Uber</a></li>
+                        <li
+                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
+                            <a class="text-white text-[.9rem] font-normal" href="#">Ride</a>
+                        </li>
+                        <li
+                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
+                            <a class="text-white text-[.8rem] font-normal " href="#">Earn</a>
+                        </li>
+                        <li
+                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
+                            <a class="text-white text-[.8rem] font-normal" href="#">Travel</a>
+                        </li>
+                        <li
+                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:not-visited:before:w-[100%]">
+                            <a class="text-white text-[.8rem] font-normal " href="#">Business</a>
+                        </li>
+                        <li
+                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
+                            <a class="text-white text-[.8rem] font-normal " href="#">Uber eats</a>
+                        </li>
+                        <li
+                            class="relative group pl-[.7rem] pr-[.7rem] pt-[.3rem] pb-[.3rem] rounded-[1rem] bg-[var(--social-link-color)] select-none cursor-pointer">
+                            <input type="checkbox" class="peer hidden" id="for-ul-nav-shenavar">
+                            <label for="for-ul-nav-shenavar" class="flex items-center justify-between gap-1 cursor-pointer text-white text-[.8rem] font-normal">
+                                About<i
+                                    class="fa-solid fa-chevron-down text-[white] ease-in duration-75 group-has-[:checked]:rotate-x-[-180deg]"></i>
+                                <nav
+                                    class="absolute w-[13rem] top-[50px] left-0 linear duration-200 backdrop-blur-[5px]  invisible opacity-0 group-has-[:checked]:visible group-has-[:checked]:opacity-[1] rounded-[.3rem] bg-[black] pl-0 pr-0 pt-[.5rem] pb-[.5rem]">
+                                    <ul class="">
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">About us</a></li>
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">Our offerings</a></li>
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">How Uber Works</a></li>
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">Sustanability</a></li>
+                                        <li
+                                            class="group/menu-inside w-full flex items-center justify-between">
+                                            <input type="checkbox" class="hidden" id="secound-nav-shenavar">
+                                            <label class="flex items-center justify-between w-full cursor-pointer relative pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]" for="secound-nav-shenavar">Explore <i class="fa-solid fa-chevron-down rotate-[90deg] group-has-[:checked]/menu-inside:rotate-[-90deg]"></i>
+                                                <nav class="absolute left-[14.5rem] top-[0] w-[13rem] invisible opacity-0 ease-in-out duration-200 bg-[black] pl-0 pr-0 pt-[.5rem] pb-[.5rem] rounded-[.3rem] group-has-[:checked]/menu-inside:visible group-has-[:checked]/menu-inside:opacity-100">
+                                                    <ul>
+                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#" class="text-[.9rem]"></a>Getting around gent</li>
+                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#" class="text-[.9rem]"></a>Getting around gent</li>
+                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#" class="text-[.9rem]"></a>Getting around gent</li>
+                                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#" class="text-[.9rem]"></a>Getting around gent</li>
+                                                    </ul>
+                                                </nav>
+                                            </label>
+                                        </li>
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">Newsroom</a></li>
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">Investor relations</a></li>
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">Autonomouse</a></li>
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">Merchants</a></li>
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">Blog</a></li>
+                                        <li class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem]"><a href="#"
+                                                class="text-[.9rem]">Careers</a></li>
+                                </nav>
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex items-center justify-between gap-3">
+                <div
+                    class="pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] ease-in duration-[.2s] flex items-center justify-center gap-1 hover:bg-[var(--header-hover-btn)] rounded-4xl">
+                    <label for="for-language-changes"
+                        class="flex items-center justify-between gap-0.5 select-none group font-bold text-white text-[.9rem]"><i
+                            class="fa-solid fa-earth-americas text-[.9rem]"></i>EN
+                    </label>
+                    <input type="checkbox" id="for-language-changes" class="peer hidden">
+                    <div
+                        class="fixed overflow-hidden invisible [clip-path:circle(5%_at_top_right)] opacity-0 ease-out duration-[.3s] top-[65px] left-[50%] translate-x-[-50%] w-full h-full pl-[15rem] pr-[15rem] pt-[7rem] pb-[7rem] peer-checked:opacity-[1] peer-checked:visible peer-checked:[clip-path:circle(100%_at_center)]">
+                        <div class="w-[50%] flex flex-col gap-20">
+                            <h1 class="text-black text-[2rem] font-bold">Select your preferred language</h1>
+                            <div class="flex items-center justify-center gap-[2rem] w-fit">
+                                <h2
+                                    class="rounded-[.4rem] font-bold pl-[2rem] pr-[2rem] pt-[.8rem] pb-[.8rem] hover:bg-[rgba(236,236,236,0.711)]">
+                                    English,English</h2>
+                                <h2
+                                    class="rounded-[.4rem] font-bold pl-[2rem] pr-[2rem] pt-[.8rem] pb-[.8rem] hover:bg-[rgba(236,236,236,0.711)]">
+                                    Dutch,Nederlands</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3
+                    class="text-white text-[.9rem] font-bold transition ease-in duration-[.2s] hover:bg-[var(--header-hover-btn)] pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] rounded-4xl">
+                    <a href="#">Help</a>
+                </h3>
+                <h3
+                    class="text-white text-[.9rem] font-bold transition ease-in duration-[.2s] hover:bg-[var(--header-hover-btn)] pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] rounded-4xl">
+                    <a href="#">Log in</a>
+                </h3>
+                <button
+                    class="pl-[.5rem] pr-[.5rem] transition ease-in duration-[.2s] pt-[.3rem] pb-[.3rem] text-black bg-white text-[1rem] rounded-4xl  hover:bg-[var(--hover-btn-show-color)]"><a
+                        href="#">Sign up</a></button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
