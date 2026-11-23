@@ -8,8 +8,6 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-800: oklch(44.4% 0.177 26.899);
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-black: #000;
     --color-white: #fff;
@@ -202,26 +200,8 @@
   .right-0 {
     right: 0px;
   }
-  .right-\[-\.8rem\] {
-    right: -.8rem;
-  }
-  .right-\[-1\.3rem\] {
-    right: -1.3rem;
-  }
-  .right-\[-1\.4rem\] {
-    right: -1.4rem;
-  }
   .right-\[-1rem\] {
     right: -1rem;
-  }
-  .right-\[-5px\] {
-    right: -5px;
-  }
-  .right-\[-10px\] {
-    right: -10px;
-  }
-  .right-\[-\] {
-    right: -;
   }
   .bottom-\[-70px\] {
     bottom: -70px;
@@ -277,9 +257,6 @@
   .mt-\[13rem\] {
     margin-top: 13rem;
   }
-  .mt-auto {
-    margin-top: auto;
-  }
   .mr-\[1rem\] {
     margin-right: 1rem;
   }
@@ -295,9 +272,6 @@
   .mb-\[5rem\] {
     margin-bottom: 5rem;
   }
-  .mb-auto {
-    margin-bottom: auto;
-  }
   .ml-auto {
     margin-left: auto;
   }
@@ -309,6 +283,9 @@
   }
   .hidden {
     display: none;
+  }
+  .inline {
+    display: inline;
   }
   .inline-block {
     display: inline-block;
@@ -322,8 +299,20 @@
   .h-\[30dvh\] {
     height: 30dvh;
   }
+  .h-\[30px\] {
+    height: 30px;
+  }
+  .h-\[40px\] {
+    height: 40px;
+  }
   .h-\[50px\] {
     height: 50px;
+  }
+  .h-\[60px\] {
+    height: 60px;
+  }
+  .h-\[70px\] {
+    height: 70px;
   }
   .h-\[100px\] {
     height: 100px;
@@ -342,9 +331,6 @@
   }
   .w-\[13rem\] {
     width: 13rem;
-  }
-  .w-\[40\%\] {
-    width: 40%;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -416,41 +402,14 @@
   .resize {
     resize: both;
   }
-  .grid-cols-\[repeat\(\)\] {
-    grid-template-columns: repeat();
-  }
-  .grid-cols-\[repeat\(1\)\] {
-    grid-template-columns: repeat(1);
-  }
-  .grid-cols-\[repeat\(1\,\)\] {
-    grid-template-columns: repeat(1,);
-  }
   .grid-cols-\[repeat\(1\,1fr\)\] {
     grid-template-columns: repeat(1,1fr);
-  }
-  .grid-cols-\[repeat\(1\,auto\)\] {
-    grid-template-columns: repeat(1,auto);
-  }
-  .grid-cols-\[repeat\(2\,\)\] {
-    grid-template-columns: repeat(2,);
-  }
-  .grid-cols-\[repeat\(2\,1fr\)\] {
-    grid-template-columns: repeat(2,1fr);
-  }
-  .grid-cols-\[repeat\(2\,auo\)\] {
-    grid-template-columns: repeat(2,auo);
   }
   .grid-cols-\[repeat\(2\,auto\)\] {
     grid-template-columns: repeat(2,auto);
   }
-  .grid-cols-\[repeat\(2\,autuo\)\] {
-    grid-template-columns: repeat(2,autuo);
-  }
   .grid-cols-\[repeat\(3\,1fr\)\] {
     grid-template-columns: repeat(3,1fr);
-  }
-  .grid-cols-\[repeat\] {
-    grid-template-columns: repeat;
   }
   .flex-col {
     flex-direction: column;
@@ -460,9 +419,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .items-end {
-    align-items: flex-end;
   }
   .items-start {
     align-items: flex-start;
@@ -481,9 +437,6 @@
   }
   .justify-start {
     justify-content: flex-start;
-  }
-  .justify-items-center {
-    justify-items: center;
   }
   .gap-0 {
     gap: 0px;
@@ -509,8 +462,20 @@
   .gap-3\.5 {
     gap: calc(var(--spacing) * 3.5);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-4\.5 {
+    gap: calc(var(--spacing) * 4.5);
+  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
+  }
+  .gap-\[\.2rem\] {
+    gap: .2rem;
+  }
+  .gap-\[\.3\] {
+    gap: .3;
   }
   .gap-\[\.3rem\] {
     gap: .3rem;
@@ -521,8 +486,14 @@
   .gap-\[\.5rem\] {
     gap: .5rem;
   }
+  .gap-\[\.7rem\] {
+    gap: .7rem;
+  }
   .gap-\[\.8rem\] {
     gap: .8rem;
+  }
+  .gap-\[\.9rem\] {
+    gap: .9rem;
   }
   .gap-\[1\.3rem\] {
     gap: 1.3rem;
@@ -533,38 +504,38 @@
   .gap-\[1\.5rem\] {
     gap: 1.5rem;
   }
+  .gap-\[1\.7rem\] {
+    gap: 1.7rem;
+  }
   .gap-\[2\.5rem\] {
     gap: 2.5rem;
-  }
-  .gap-\[2r\] {
-    gap: 2r;
   }
   .gap-\[2rem\] {
     gap: 2rem;
   }
+  .gap-\[3\.5rem\] {
+    gap: 3.5rem;
+  }
   .gap-\[3rem\] {
     gap: 3rem;
   }
-  .gap-\[4rem\] {
-    gap: 4rem;
-  }
-  .gap-\[5\.5rem\] {
-    gap: 5.5rem;
-  }
-  .gap-\[7rem\] {
-    gap: 7rem;
-  }
-  .gap-\[8rem\] {
-    gap: 8rem;
+  .gap-\[5rem\] {
+    gap: 5rem;
   }
   .gap-\[10rem\] {
     gap: 10rem;
   }
-  .gap-\[rem\] {
-    gap: rem;
+  .gap-\[12rem\] {
+    gap: 12rem;
   }
-  .self-baseline {
-    align-self: baseline;
+  .gap-\[13rem\] {
+    gap: 13rem;
+  }
+  .gap-\[14rem\] {
+    gap: 14rem;
+  }
+  .gap-\[15rem\] {
+    gap: 15rem;
   }
   .self-center {
     align-self: center;
@@ -592,6 +563,9 @@
   }
   .rounded-\[\.8rem\] {
     border-radius: .8rem;
+  }
+  .rounded-\[\.\] {
+    border-radius: .;
   }
   .rounded-\[1rem\] {
     border-radius: 1rem;
@@ -627,6 +601,12 @@
   .bg-\[black\] {
     background-color: black;
   }
+  .bg-\[blue\] {
+    background-color: blue;
+  }
+  .bg-\[gray\] {
+    background-color: gray;
+  }
   .bg-\[red\] {
     background-color: red;
   }
@@ -638,6 +618,12 @@
   }
   .bg-\[rgba\(255\,255\,255\,0\.93\)\] {
     background-color: rgba(255,255,255,0.93);
+  }
+  .bg-\[va\] {
+    background-color: va;
+  }
+  .bg-\[var\(\)\] {
+    background-color: var();
   }
   .bg-\[var\(--product-card-bg\)\] {
     background-color: var(--product-card-bg);
@@ -657,26 +643,29 @@
   .bg-none {
     background-image: none;
   }
+  .p-\[\.4rem\] {
+    padding: .4rem;
+  }
   .p-\[\.5rem\] {
     padding: .5rem;
   }
   .p-\[\.6rem\] {
     padding: .6rem;
   }
-  .p-\[\.7rem\] {
-    padding: .7rem;
-  }
   .p-\[\.8rem\] {
     padding: .8rem;
   }
-  .p-\[1\.5rem\] {
-    padding: 1.5rem;
+  .px-\[\.5rem\] {
+    padding-inline: .5rem;
   }
-  .p-\[1rem\] {
-    padding: 1rem;
+  .px-\[\.6rem\] {
+    padding-inline: .6rem;
   }
   .px-\[\.7rem\] {
     padding-inline: .7rem;
+  }
+  .px-\[\.8rem\] {
+    padding-inline: .8rem;
   }
   .px-\[1\.1rem\] {
     padding-inline: 1.1rem;
@@ -693,6 +682,9 @@
   .py-\[\.4rem\] {
     padding-block: .4rem;
   }
+  .py-\[\.5rem\] {
+    padding-block: .5rem;
+  }
   .py-\[\.6rem\] {
     padding-block: .6rem;
   }
@@ -702,8 +694,14 @@
   .py-\[\.8rem\] {
     padding-block: .8rem;
   }
-  .py-\[\.\] {
-    padding-block: .;
+  .py-\[1\.3rem\] {
+    padding-block: 1.3rem;
+  }
+  .py-\[1rem\] {
+    padding-block: 1rem;
+  }
+  .py-\[rem\] {
+    padding-block: rem;
   }
   .pt-\[\.2rem\] {
     padding-top: .2rem;
@@ -837,8 +835,8 @@
   .pl-\[15rem\] {
     padding-left: 15rem;
   }
-  .align-middle {
-    vertical-align: middle;
+  .text-\[\.7rem\] {
+    font-size: .7rem;
   }
   .text-\[\.8rem\] {
     font-size: .8rem;
@@ -852,11 +850,17 @@
   .text-\[1\.2rem\] {
     font-size: 1.2rem;
   }
+  .text-\[1\.3rem\] {
+    font-size: 1.3rem;
+  }
   .text-\[1\.4rem\] {
     font-size: 1.4rem;
   }
   .text-\[1\.5rem\] {
     font-size: 1.5rem;
+  }
+  .text-\[1\.7rem\] {
+    font-size: 1.7rem;
   }
   .text-\[1\.9rem\] {
     font-size: 1.9rem;
@@ -870,14 +874,8 @@
   .text-\[2\.5rem\] {
     font-size: 2.5rem;
   }
-  .text-\[2\.7rem\] {
-    font-size: 2.7rem;
-  }
   .text-\[2rem\] {
     font-size: 2rem;
-  }
-  .text-\[3rem\] {
-    font-size: 3rem;
   }
   .text-\[4rem\] {
     font-size: 4rem;
@@ -904,8 +902,11 @@
   .text-\[\.\] {
     color: .;
   }
-  .text-\[1\.\] {
-    color: 1.;
+  .text-\[\.rem\] {
+    color: .rem;
+  }
+  .text-\[silver\] {
+    color: silver;
   }
   .text-\[white\] {
     color: white;
@@ -990,24 +991,6 @@
   @media (hover: hover) {
     :is(:where(.group\/inside-right-angel):hover .group-hover\/inside-right-angel\:right-\[-1\.3rem\]) {
       right: -1.3rem;
-    }
-    :is(:where(.group\/inside-right-angel):hover .group-hover\/inside-right-angel\:right-\[-1\.5rem\]) {
-      right: -1.5rem;
-    }
-    :is(:where(.group\/inside-right-angel):hover .group-hover\/inside-right-angel\:right-\[-10px\]) {
-      right: -10px;
-    }
-    :is(:where(.group\/inside-right-angel):hover .group-hover\/inside-right-angel\:right-\[-20px\]) {
-      right: -20px;
-    }
-    :is(:where(.group\/inside-right-angel):hover .group-hover\/inside-right-angel\:right-\[10px\]) {
-      right: 10px;
-    }
-    :is(:where(.group\/inside-right-angel):hover .group-hover\/inside-right-angel\:mr-\[1rem\]) {
-      margin-right: 1rem;
-    }
-    :is(:where(.group\/inside-right-angel):hover .group-hover\/inside-right-angel\:ml-\[1rem\]) {
-      margin-left: 1rem;
     }
     :is(:where(.group\/prd-btn):hover .group-hover\/prd-btn\:scale-\[1\.1\]) {
       scale: 1.1;
@@ -1156,6 +1139,9 @@
     .hover\:bg-\[rgba\(236\,236\,236\,0\.711\)\]:hover {
       background-color: rgba(236,236,236,0.711);
     }
+    .hover\:bg-\[var\(\)\]:hover {
+      background-color: var();
+    }
     .hover\:bg-\[var\(--header-hover-btn\)\]:hover {
       background-color: var(--header-hover-btn);
     }
@@ -1165,11 +1151,14 @@
     .hover\:bg-\[var\(--hover-btn-show-color-two\)\]:hover {
       background-color: var(--hover-btn-show-color-two);
     }
-    .hover\:text-\[grat\]:hover {
-      color: grat;
+    .hover\:bg-\[var\(--social-link-hvr-color\)\]:hover {
+      background-color: var(--social-link-hvr-color);
     }
     .hover\:text-\[gray\]:hover {
       color: gray;
+    }
+    .hover\:text-\[silver\]:hover {
+      color: silver;
     }
     .hover\:before\:w-\[100\%\]:hover::before {
       content: var(--tw-content);
