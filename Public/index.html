@@ -27,7 +27,7 @@
         --social-link-hvr-color: rgba(68, 67, 67, 0.555);
         --media-query: 0 1.4rem;
         --hambergur-menu: 1.5rem 1.5rem;
-        --header-responsivmode-padding: 1rem 1.4rem;
+        --header-responsivmode-padding: 1.4rem;
         --header-hover-btn: rgba(75, 74, 74, 0.76);
         --product-card-bg: rgba(255, 255, 255, 0.151)
     }
@@ -38,179 +38,231 @@
 </style>
 
 <body>
-    <header class="flex justify-center items-center bg-[black]">
-        <div class="flex justify-between items-center w-[83%] pt-[.8rem] pb-[.8rem] pl-[0] pr-[0]">
-            <div class="">
-                <nav>
-                    <ul class="flex items-center justify-center gap-[.4rem]">
-                        <li class="pb-[.2rem] mr-[1rem]"><a class="text-[white] text-[1.5rem]" href="#">Uber</a></li>
-                        <li
-                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
-                            <a class="text-white text-[.9rem] font-normal" href="#">Ride</a>
-                        </li>
-                        <li
-                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
-                            <a class="text-white text-[.8rem] font-normal " href="#">Earn</a>
-                        </li>
-                        <li
-                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
-                            <a class="text-white text-[.8rem] font-normal" href="#">Travel</a>
-                        </li>
-                        <li
-                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:not-visited:before:w-[100%]">
-                            <a class="text-white text-[.8rem] font-normal " href="#">Business</a>
-                        </li>
-                        <li
-                            class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
-                            <a class="text-white text-[.8rem] font-normal " href="#">Uber eats</a>
-                        </li>
-                        <li
-                            class="relative group pl-[.7rem] pr-[.7rem] pt-[.4rem] pb-[.4rem] rounded-[1rem] bg-[var(--social-link-color)] select-none cursor-pointer">
-                            <input type="checkbox" class="peer hidden" id="for-ul-nav-shenavar">
-                            <label for="for-ul-nav-shenavar"
-                                class="flex items-center justify-between gap-1 cursor-pointer text-white text-[.8rem] font-normal">
-                                About<i
-                                    class="fa-solid fa-chevron-down text-[white] ease-in duration-75 group-has-[:checked]:rotate-x-[-180deg]"></i>
-                                <nav
-                                    class="absolute w-[13rem] top-[50px] left-0 linear duration-200 backdrop-blur-[5px]  invisible opacity-0 group-has-[:checked]:visible group-has-[:checked]:opacity-[1] rounded-[.3rem] bg-[white] pl-0 pr-0 pt-[.5rem] pb-[.5rem]">
-                                    <ul class="">
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">About us</a>
-                                        </li>
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">Our offerings</a>
-                                        </li>
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">How Uber Works</a>
-                                        </li>
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">Sustanability</a>
-                                        </li>
-                                        <li class="group/menu-inside w-full flex items-center justify-between">
-                                            <input type="checkbox" class="hidden" id="secound-nav-shenavar">
-                                            <label
-                                                class="flex items-center justify-between w-full cursor-pointer relative pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"
-                                                for="secound-nav-shenavar">Explore <i
-                                                    class="fa-solid fa-chevron-down rotate-[90deg] ease-in duration-200 group-has-[:checked]/menu-inside:rotate-[-90deg]"></i>
-                                                <nav
-                                                    class="absolute left-[14.5rem] top-[0] w-[13rem] invisible opacity-0 ease-in-out duration-200 bg-[white] pl-0 pr-0 pt-[.5rem] pb-[.5rem] rounded-[.3rem] group-has-[:checked]/menu-inside:visible group-has-[:checked]/menu-inside:opacity-100">
-                                                    <ul>
-                                                        <li
-                                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
-                                                            <a href="#" class="text-[.9rem] text-black"></a>Getting
-                                                            around gent
-                                                        </li>
-                                                        <li
-                                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
-                                                            <a href="#" class="text-[.9rem] text-black "></a>Getting
-                                                            around gent
-                                                        </li>
-                                                        <li
-                                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
-                                                            <a href="#" class="text-[.9rem] text-black "></a>Getting
-                                                            around gent
-                                                        </li>
-                                                        <li
-                                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
-                                                            <a href="#"
-                                                                class="text-[.9rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"></a>Getting
-                                                            around gent
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </label>
-                                        </li>
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">Newsroom</a>
-                                        </li>
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">Investor relations</a>
-                                        </li>
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">Autonomouse</a>
-                                        </li>
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">Merchants</a>
-                                        </li>
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">Blog</a>
-                                        </li>
-                                        <li
-                                            class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
-                                            <a href="#" class="text-[.9rem]">Careers</a>
-                                        </li>
+    <header class="w-full flex justify-center items-center">
+        <div class="fixed w-full top-0 left-[50%] translate-x-[-50%] z-20 flex items-center justify-center bg-[black]">
+            <div
+                class="max-lp-new:w-full max-lp-new:px-[var(--header-responsivmode-padding)] flex items-center justify-between w-[83%] max-xl:w-[90%] py-[.8rem]">
+                <div class="">
+                    <nav>
+                        <ul class="max-lp-new:*:not-first:hidden flex items-center justify-center gap-[.4rem]">
+                            <li class="pb-[.2rem] mr-[1rem]"><a class="text-[white] text-[1.5rem]" href="#">Uber</a>
+                            </li>
+                            <li
+                                class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
+                                <a class="text-white text-[.9rem] font-normal" href="#">Ride</a>
+                            </li>
+                            <li
+                                class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
+                                <a class="text-white text-[.8rem] font-normal " href="#">Earn</a>
+                            </li>
+                            <li
+                                class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
+                                <a class="text-white text-[.8rem] font-normal" href="#">Travel</a>
+                            </li>
+                            <li
+                                class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:not-visited:before:w-[100%]">
+                                <a class="text-white text-[.8rem] font-normal " href="#">Business</a>
+                            </li>
+                            <li
+                                class="relative overflow-hidden pl-[.7rem] pr-[.7rem] pt-[.2rem] pb-[.2rem] before:transition-[width] before:ease-in before:duration-[.2s] rounded-[1rem] bg-[var(--social-link-color)] before:absolute before:bottom-[-1px]  before:left-[50%] before:translate-[-50%] before:w-[0%] before:h-[2px]  before:bg-white hover:before:w-[100%]">
+                                <a class="text-white text-[.8rem] font-normal " href="#">Uber eats</a>
+                            </li>
+                            <li
+                                class="relative group pl-[.7rem] pr-[.7rem] pt-[.4rem] pb-[.4rem] rounded-[1rem] bg-[var(--social-link-color)] select-none cursor-pointer">
+                                <input type="checkbox" class="peer hidden" id="for-ul-nav-shenavar">
+                                <label for="for-ul-nav-shenavar"
+                                    class="flex items-center justify-between gap-1 cursor-pointer text-white text-[.8rem] font-normal">
+                                    About<i
+                                        class="fa-solid fa-chevron-down text-[white] ease-in duration-75 group-has-[:checked]:rotate-x-[-180deg]"></i>
+                                    <nav
+                                        class="absolute w-[13rem] top-[50px] left-0 linear duration-200 backdrop-blur-[5px]  invisible opacity-0 group-has-[:checked]:visible group-has-[:checked]:opacity-[1] rounded-[.3rem] bg-[white] pl-0 pr-0 pt-[.5rem] pb-[.5rem]">
+                                        <ul class="">
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">About us</a>
+                                            </li>
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">Our offerings</a>
+                                            </li>
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">How Uber Works</a>
+                                            </li>
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">Sustanability</a>
+                                            </li>
+                                            <li class="group/menu-inside w-full flex items-center justify-between">
+                                                <input type="checkbox" class="hidden" id="secound-nav-shenavar">
+                                                <label
+                                                    class="flex items-center justify-between w-full cursor-pointer relative pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"
+                                                    for="secound-nav-shenavar">Explore <i
+                                                        class="fa-solid fa-chevron-down rotate-[90deg] ease-in duration-200 group-has-[:checked]/menu-inside:rotate-[-90deg]"></i>
+                                                    <nav
+                                                        class="absolute left-[14.5rem] top-[0] w-[13rem] invisible opacity-0 ease-in-out duration-200 bg-[white] pl-0 pr-0 pt-[.5rem] pb-[.5rem] rounded-[.3rem] group-has-[:checked]/menu-inside:visible group-has-[:checked]/menu-inside:opacity-100">
+                                                        <ul>
+                                                            <li
+                                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
+                                                                <a href="#" class="text-[.9rem] text-black"></a>Getting
+                                                                around gent
+                                                            </li>
+                                                            <li
+                                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
+                                                                <a href="#" class="text-[.9rem] text-black "></a>Getting
+                                                                around gent
+                                                            </li>
+                                                            <li
+                                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
+                                                                <a href="#" class="text-[.9rem] text-black "></a>Getting
+                                                                around gent
+                                                            </li>
+                                                            <li
+                                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] hover:bg-[var(--hover-btn-show-color-two)]">
+                                                                <a href="#"
+                                                                    class="text-[.9rem] text-black hover:bg-[var(--hover-btn-show-color-two)]"></a>Getting
+                                                                around gent
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </label>
+                                            </li>
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">Newsroom</a>
+                                            </li>
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">Investor relations</a>
+                                            </li>
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">Autonomouse</a>
+                                            </li>
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">Merchants</a>
+                                            </li>
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">Blog</a>
+                                            </li>
+                                            <li
+                                                class="w-full pl-[.8rem] pr-[.8rem] pt-[.7rem] pb-[.7rem] text-black hover:bg-[var(--hover-btn-show-color-two)]">
+                                                <a href="#" class="text-[.9rem]">Careers</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </label>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex items-center justify-between gap-3">
+                    <div
+                        class="max-lp-new:hidden pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] ease-in duration-[.2s] flex items-center justify-center gap-1 hover:bg-[var(--header-hover-btn)] rounded-4xl">
+                        <label for="for-language-changes"
+                            class="flex items-center justify-between gap-0.5 select-none group font-bold text-white text-[.9rem] cursor-pointer"><i
+                                class="fa-solid fa-earth-americas text-[.9rem]"></i>EN
+                        </label>
+                        <input type="checkbox" id="for-language-changes" class="peer hidden">
+                        <div
+                            class="fixed z-10 bg-white overflow-hidden invisible [clip-path:circle(5%_at_top_right)] opacity-0 ease-out duration-[.3s] top-[65px] left-[50%] translate-x-[-50%] w-full h-[100dvh] pl-[15rem] pr-[15rem] pt-[7rem] pb-[7rem] peer-checked:opacity-[1] peer-checked:visible peer-checked:[clip-path:circle(100%_at_center)]">
+                            <div class="w-[50%] flex flex-col gap-20">
+                                <h1 class="text-black text-[2rem] font-bold">Select your preferred language</h1>
+                                <div class="flex items-center justify-center gap-[2rem] w-fit">
+                                    <h2
+                                        class="rounded-[.4rem] font-bold pl-[2rem] pr-[2rem] pt-[.8rem] pb-[.8rem] hover:bg-[rgba(236,236,236,0.711)]">
+                                        English,English</h2>
+                                    <h2
+                                        class="rounded-[.4rem] font-bold pl-[2rem] pr-[2rem] pt-[.8rem] pb-[.8rem] hover:bg-[rgba(236,236,236,0.711)]">
+                                        Dutch,Nederlands</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3
+                        class="max-lp-new:hidden text-white text-[.9rem] font-bold transition ease-in duration-[.2s] hover:bg-[var(--header-hover-btn)] pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] rounded-4xl">
+                        <a href="#">Help</a>
+                    </h3>
+                    <h3
+                        class="text-white text-[.9rem] font-bold transition ease-in duration-[.2s] hover:bg-[var(--header-hover-btn)] pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] rounded-4xl">
+                        <a href="#">Log in</a>
+                    </h3>
+                    <button
+                        class="pl-[.5rem] pr-[.5rem] transition ease-in duration-[.2s] pt-[.3rem] pb-[.3rem] text-black bg-white text-[1rem] rounded-4xl  hover:bg-[var(--hover-btn-show-color)]"><a
+                            href="#">Sign up</a></button>
+                    <div
+                        class="group/hambergur-btn-rotate-key hidden h-auto w-auto gap-[.3rem] cursor-pointer max-lp-new:flex">
+                        <input class="hidden" type="checkbox" id="hambegure-btn">
+                        <label class="flex flex-col items-center justify-center gap-[.4rem] cursor-pointer "
+                            for="hambegure-btn">
+                            <div
+                                class="w-[30px] h-[4px] rounded-[.4rem] bg-[white] ease-in duration-50 group-has-[:checked]/hambergur-btn-rotate-key:rotate-[45deg] group-has-[:checked]/hambergur-btn-rotate-key:translate-y-[5px]">
+                            </div>
+                            <div
+                                class="w-[30px] h-[4px] rounded-[.4rem] bg-[white] ease-in duration-50 group-has-[:checked]/hambergur-btn-rotate-key:hidden">
+                            </div>
+                            <div
+                                class="w-[30px] h-[4px] rounded-[.4rem] bg-[white] ease-in duration-50 group-has-[:checked]/hambergur-btn-rotate-key:rotate-[-45deg] group-has-[:checked]/hambergur-btn-rotate-key:translate-y-[-5.5px] group-has-[:checked]/hambergur-btn-rotate-key:translate-x-[.3px]">
+                            </div>
+                        </label>
+                        <div
+                            class="fixed invisible items-start justify-center w-full h-[100dvh] top-[65px] left-[200%] z-10 [clip-path:circle(5%_at_top_right)] group-has-[:checked]/hambergur-btn-rotate-key:left-[50%] group-has-[:checked]/hambergur-btn-rotate-key:translate-x-[-50%] group-has-[:checked]/hambergur-btn-rotate-key:visible group-has-[:checked]/hambergur-btn-rotate-key:[clip-path:circle(100%_at_center)] bg-[white] ease-out duration-100">
+                            <div class="w-full px-[1rem] py-[1rem] flex items-start justify-start">
+                                <nav class="w-full">
+                                    <ul class="flex flex-col gap-[1.5rem] w-full">
+                                        <li class="flex items-center justify-between w-full"><a
+                                                class="text-[2rem] font-bold text-black hover:text-[silver]"
+                                                href="#">Ride</a></li>
+                                        <li class="flex items-center justify-between w-full"><a
+                                                class="text-[2rem] font-bold text-black hover:text-[silver]"
+                                                href="#">Earn</a></li>
+                                        <li class="flex items-center justify-between w-full"><a
+                                                class="text-[2rem] font-bold text-black hover:text-[silver]"
+                                                href="#">Travel</a></li>
+                                        <li class="flex items-center justify-between w-full"><a
+                                                class="text-[2rem] font-bold text-black hover:text-[silver]"
+                                                href="#">Business</a></li>
+                                        <li class="flex items-center justify-between w-full"><a
+                                                class="text-[2rem] font-bold text-black hover:text-[silver]"
+                                                href="#">Uber
+                                                Eats</a></li>
+                                        <li class="flex items-center justify-between w-full"><a
+                                                class="text-[2rem] font-bold text-black hover:text-[silver]"
+                                                href="#">About</a><i class="fa-solid fa-chevron-down"
+                                                style="color: black; font-size: 1.2rem;"></i>
+                                        <li class="flex items-center justify-between w-full"><a
+                                                class="text-[2rem] font-bold text-black hover:text-[silver]"
+                                                href="#">Help</a></li>
                                     </ul>
                                 </nav>
-                            </label>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="flex items-center justify-between gap-3">
-                <div
-                    class="pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] ease-in duration-[.2s] flex items-center justify-center gap-1 hover:bg-[var(--header-hover-btn)] rounded-4xl">
-                    <label for="for-language-changes"
-                        class="flex items-center justify-between gap-0.5 select-none group font-bold text-white text-[.9rem] cursor-pointer"><i
-                            class="fa-solid fa-earth-americas text-[.9rem]"></i>EN
-                    </label>
-                    <input type="checkbox" id="for-language-changes" class="peer hidden">
-                    <div
-                        class="fixed z-10 bg-white overflow-hidden invisible [clip-path:circle(5%_at_top_right)] opacity-0 ease-out duration-[.3s] top-[65px] left-[50%] translate-x-[-50%] w-full h-full pl-[15rem] pr-[15rem] pt-[7rem] pb-[7rem] peer-checked:opacity-[1] peer-checked:visible peer-checked:[clip-path:circle(100%_at_center)]">
-                        <div class="w-[50%] flex flex-col gap-20">
-                            <h1 class="text-black text-[2rem] font-bold">Select your preferred language</h1>
-                            <div class="flex items-center justify-center gap-[2rem] w-fit">
-                                <h2
-                                    class="rounded-[.4rem] font-bold pl-[2rem] pr-[2rem] pt-[.8rem] pb-[.8rem] hover:bg-[rgba(236,236,236,0.711)]">
-                                    English,English</h2>
-                                <h2
-                                    class="rounded-[.4rem] font-bold pl-[2rem] pr-[2rem] pt-[.8rem] pb-[.8rem] hover:bg-[rgba(236,236,236,0.711)]">
-                                    Dutch,Nederlands</h2>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h3
-                    class="text-white text-[.9rem] font-bold transition ease-in duration-[.2s] hover:bg-[var(--header-hover-btn)] pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] rounded-4xl">
-                    <a href="#">Help</a>
-                </h3>
-                <h3
-                    class="text-white text-[.9rem] font-bold transition ease-in duration-[.2s] hover:bg-[var(--header-hover-btn)] pt-[.2rem] pb-[.2rem] pl-[.6rem] pr-[.6rem] rounded-4xl">
-                    <a href="#">Log in</a>
-                </h3>
-                <button
-                    class="pl-[.5rem] pr-[.5rem] transition ease-in duration-[.2s] pt-[.3rem] pb-[.3rem] text-black bg-white text-[1rem] rounded-4xl  hover:bg-[var(--hover-btn-show-color)]"><a
-                        href="#">Sign up</a></button>
             </div>
         </div>
     </header>
-    <main class="bg-black w-full flex items-center justify-center flex-col">
+    <main class="bg-black w-full flex items-center justify-center flex-col pt-[4rem] max-lp-new:pt-[3rem]">
         <section class="w-full flex flex-col items-center justify-center">
-            <div class="w-[75%] flex flex-col items-center justify-center">
+            <div class="w-[75%] max-xl:w-[90%] max-lp-new:w-full max-lp-new:px-[var(--header-responsivmode-padding)] flex flex-col items-center justify-center">
                 <div class="w-full flex items-start justify-between pl-0 pr-0 pt-[4rem] pb-0">
-                    <div class="flex flex-col items-start justify-baseline w-[50%]">
-                        <div class="flex gap-1">
-                            <p><i class="fa-solid fa-location-dot" style="color: white;"></i></p>
-                            <h2 class="text-white font-bold">Amsterdam,NL</h2>
-                            <h2><a class="text-white font-bold border-white border-b-2" href="#">Change City</a></h2>
+                    <div class="flex flex-col items-start justify-baseline w-[50%] max-lp-new:w-full">
+                        <div class="flex gap-1 max-md-smallest-size:items-center max-md-smallest-size:justify-center">
+                            <p><i class="fa-solid fa-location-dot max-md-smallest-size:text-[.9rem]" style="color: white;"></i></p>
+                            <h2 class="text-white font-bold max-md-smallest-size:text-[.9rem]">Amsterdam,NL</h2>
+                            <h2><a class="text-white font-bold border-white border-b-2 max-md-smallest-size:text-[.9rem]" href="#">Change City</a></h2>
                         </div>
-                        <h1 class=" text-[4rem] text-white font-bold ">Go anywhere</h1>
+                        <h1 class="max-lp-new:text-[2.7rem] text-[4rem] text-white font-bold ">Go anywhere</h1>
                         <div
-                            class="cursor-pointer bg-[rgba(255,255,255,0.93)] rounded-4xl pl-[.8rem] pr-[.8rem] pt-[.9rem] pb-[.9rem]">
+                            class="max-lp-new:hidden cursor-pointer bg-[rgba(255,255,255,0.93)] rounded-4xl pl-[.8rem] pr-[.8rem] pt-[.9rem] pb-[.9rem]">
                             <i class="fa-solid fa-clock" style="color: black;"></i>
                             Pickup now <i class="fa-solid fa-chevron-down" style="color: black;"></i>
                         </div>
-                        <div class="flex flex-col gap-3.5 mt-[1.5rem] w-[65%]">
+                        <div class="flex flex-col gap-3.5 mt-[1.5rem] w-[65%] max-lp-new:w-full">
                             <div
-                                class="relative rounded-[.3rem] w-full bg-[rgba(255,255,255,0.93)] pl-[1.3rem] pr-[1.3rem] pt-[1rem] pb-[1rem]">
+                                class="relative rounded-[.3rem] w-[25rem] max-lp-new:w-[25rem] bg-[rgba(255,255,255,0.93)] pl-[1.3rem] pr-[1.3rem] pt-[1rem] pb-[1rem] max-md-smallest-size:w-full">
                                 <input type="text" id="input-clicker" required class="peer outline-0 border-0 w-full">
                                 <label
                                     class="absolute ease-out duration-200 left-[20px] top-[17px] bg-none peer-focus:top-[-10px]
@@ -218,7 +270,7 @@
                                     for="input-clicker">Pickup Location</label>
                             </div>
                             <div
-                                class="relative rounded-[.3rem] w-full bg-[rgba(255,255,255,0.93)] pl-[1.3rem] pr-[1.3rem] pt-[1rem] pb-[1rem]">
+                                class="relative rounded-[.3rem] w-[25rem] max-lp-new:w-[25rem] bg-[rgba(255,255,255,0.93)] pl-[1.3rem] pr-[1.3rem] pt-[1rem] pb-[1rem] max-md-smallest-size:w-full">
                                 <input class="peer outline-0 border-0 w-full" required type="text" id="input-clicker">
                                 <label
                                     class="absolute ease-out duration-200 left-[20px] top-[17px] bg-none peer-focus:top-[-10px]
@@ -226,7 +278,7 @@
                                     for="input-clicker">Dropoff Location</label>
                             </div>
                         </div>
-                        <div class="mt-[1.5rem] w-[65%] flex items-center justify-start gap-[1.5rem]">
+                        <div class="max-lp-new:w-full mt-[1.5rem] w-[80%] flex items-center justify-start gap-[1.5rem] max-md-smallest-size:flex-col max-md-smallest-size:items-start">
                             <button
                                 class="pl-[1.4rem] pr-[1.4rem] pt-[.7rem] pb-[.7rem] rounded-[.5rem] bg-[rgba(255,255,255,0.93)] hover:bg-[var(--hover-btn-show-color)]"><a
                                     class="font-bold text-[.9rem]" href="#">See Prices</a></button>
@@ -235,7 +287,7 @@
                                     href="#">Log in to check your activity</a></h3>
                         </div>
                     </div>
-                    <div class=" flex justify-end relative">
+                    <div class="flex justify-end relative max-lp-new:hidden">
                         <img class="h-[28rem] w-auto rounded-[.3rem]"
                             src="../assets/global-images/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy8yNzY4OWQwNC1lNWUyLTQxZTQtYjk2MS1mZTk0ZjA0YzFjNmQuanBlZw==.webp"
                             alt="Uber task" loading="lazy">
@@ -250,101 +302,101 @@
                 </div>
                 <div class="mt-[3rem] flex flex-col gap-[2rem] items-start justify-start w-full">
                     <div>
-                        <h1 class="text-white text-[1.9rem] font-bold">Explore what you can do with Uber</h1>
+                        <h1 class="text-white text-[1.9rem] font-bold max-mobile-device:text-[1.5rem]">Explore what you can do with Uber</h1>
                     </div>
-                    <div class="grid grid-cols-[repeat(3,1fr)] gap-3.5">
+                    <div class="grid grid-cols-[repeat(3,1fr)] gap-3.5 max-lp-new:w-full max-lp-new:items-center max-lp-new:justify-center max-lp-new:grid-cols-[repeat(2,1fr)] max-mobile-device:grid-cols-[repeat(3,1fr)]">
                         <div
-                            class="flex flex-col items-start justify-start bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
-                            <h3 class="text-white text-[1.2rem] font-bold">Ride</h3>
-                            <div class="flex items-center gap-2.5">
-                                <p class="max-w-[250px] text-white text-[.9rem] break-keep">Go anywhere with Uber.
+                            class="flex flex-col items-start justify-start max-mobile-device:items-center max-mobile-device:justify-center max-mobile-device:flex-col-reverse bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
+                            <h3 class="text-white text-[1.2rem] font-bold max-mobile-device:text-[.9rem]">Ride</h3>
+                            <div class="flex items-center gap-2.5 max-lp-new:justify-between max-lp-new:w-full max-mobile-device:items-center max-mobile-device:justify-center">
+                                <p class="max-w-[250px] max-mobile-device:hidden text-white text-[.9rem] break-keep">Go anywhere with Uber.
                                     Request a ride,hop in,and go.</p>
-                                <img class="w-auto h-[100px]" src="../assets/products-cards/Sedan-160-temp.png"
+                                <img class="w-auto h-[100px] max-md-smallest-size:w-full max-md-smallest-size:h-auto" src="../assets/products-cards/Sedan-160-temp.png"
                                     alt="Sedan">
                             </div>
                             <button class="py-[.4rem] px-[.7rem] hover:bg-[var(--hover-btn-show-color)] 
-                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white"><a
+                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white max-mobile-device:hidden"><a
                                     class="inline-block text-[.9rem] font-bold ease-out duration-150 group-hover/prd-btn:scale-[1.1] "
                                     href="#">Details</a></button>
                         </div>
                         <div
-                            class="flex flex-col items-start justify-start bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
-                            <h3 class="text-white text-[1.2rem] font-bold">Reserve</h3>
-                            <div class="flex items-center gap-2.5">
-                                <p class="max-w-[250px] text-white text-[.9rem] break-keep">Go anywhere with Uber.
+                            class="flex flex-col items-start justify-start max-mobile-device:items-center max-mobile-device:justify-center max-mobile-device:flex-col-reverse bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
+                            <h3 class="text-white text-[1.2rem] font-bold max-mobile-device:text-[.9rem]">Reserve</h3>
+                            <div class="flex items-center gap-2.5 max-lp-new:justify-between max-lp-new:w-full max-mobile-device:items-center max-mobile-device:justify-center">
+                                <p class="max-w-[250px] max-mobile-device:hidden text-white text-[.9rem] break-keep">Go anywhere with Uber.
                                     Request a ride,hop in,and go.</p>
-                                <img class="w-auto h-[100px]" src="../assets/products-cards/Calendar-351-temp.png"
+                                <img class="w-auto h-[100px] max-md-smallest-size:w-full max-md-smallest-size:h-auto" src="../assets/products-cards/Calendar-351-temp.png"
                                     alt="Calendar">
                             </div>
                             <button class="py-[.4rem] px-[.7rem] hover:bg-[var(--hover-btn-show-color)] 
-                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white"><a
+                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white max-mobile-device:hidden"><a
                                     class="inline-block text-[.9rem] font-bold ease-out duration-150 group-hover/prd-btn:scale-[1.1] "
                                     href="#">Details</a></button>
                         </div>
                         <div
-                            class="flex flex-col items-start justify-start bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
-                            <h3 class="text-white text-[1.2rem] font-bold">Airport</h3>
-                            <div class="flex items-center gap-2.5">
-                                <p class="max-w-[250px] text-white text-[.9rem] break-keep">Go anywhere with Uber.
+                            class="flex flex-col items-start justify-start max-mobile-device:items-center max-mobile-device:justify-center max-mobile-device:flex-col-reverse bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
+                            <h3 class="text-white text-[1.2rem] font-bold max-mobile-device:text-[.9rem]">Airport</h3>
+                            <div class="flex items-center gap-2.5 max-lp-new:justify-between max-lp-new:w-full max-mobile-device:items-center max-mobile-device:justify-center">
+                                <p class="max-w-[250px] max-mobile-device:hidden text-white text-[.9rem] break-keep">Go anywhere with Uber.
                                     Request a ride,hop in,and go.</p>
-                                <img class="w-auto h-[100px]" src="../assets//products-cards/airport-nava-tile.png"
+                                <img class="w-auto h-[100px] max-md-smallest-size:w-full max-md-smallest-size:h-auto" src="../assets//products-cards/airport-nava-tile.png"
                                     alt="Airport">
                             </div>
                             <button class="py-[.4rem] px-[.7rem] hover:bg-[var(--hover-btn-show-color)] 
-                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white"><a
+                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white max-mobile-device:hidden"><a
                                     class="inline-block text-[.9rem] font-bold ease-out duration-150 group-hover/prd-btn:scale-[1.1] "
                                     href="#">Details</a></button>
                         </div>
                         <div
-                            class="flex flex-col items-start justify-start bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
-                            <h3 class="text-white text-[1.2rem] font-bold">Taxi</h3>
-                            <div class="flex items-center gap-2.5">
-                                <p class="max-w-[250px] text-white text-[.9rem] break-keep">Go anywhere with Uber.
+                            class="flex flex-col items-start justify-start max-mobile-device:items-center max-mobile-device:justify-center max-mobile-device:flex-col-reverse bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
+                            <h3 class="text-white text-[1.2rem] font-bold max-mobile-device:text-[.9rem]">Taxi</h3>
+                            <div class="flex items-center gap-2.5 max-lp-new:justify-between max-lp-new:w-full max-mobile-device:items-center max-mobile-device:justify-center">
+                                <p class="max-w-[250px] max-mobile-device:hidden text-white text-[.9rem] break-keep">Go anywhere with Uber.
                                     Request a ride,hop in,and go.</p>
-                                <img class="w-auto h-[100px]" src="../assets/products-cards/SedanTaxi-124-0.png"
+                                <img class="w-auto h-[100px] max-md-smallest-size:w-full max-md-smallest-size:h-auto" src="../assets/products-cards/SedanTaxi-124-0.png"
                                     alt="Taxi">
                             </div>
                             <button class="py-[.4rem] px-[.7rem] hover:bg-[var(--hover-btn-show-color)] 
-                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white"><a
-                                    class="inline-block text-[.9rem] font-bold ease-out duration-150 group-hover/prd-btn:scale-[1.1] "
+                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white max-mobile-device:hidden"><a
+                                    class="inline-block text-[.9rem] font-bold ease-out duration-150 group-hover/prd-btn:scale-[1.1]"
                                     href="#">Details</a></button>
                         </div>
                         <div
-                            class="flex flex-col items-start justify-start bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
-                            <h3 class="text-white text-[1.2rem] font-bold">Black Sedan</h3>
-                            <div class="flex items-center gap-2.5">
-                                <p class="max-w-[250px] text-white text-[.9rem] break-keep">Go anywhere with Uber.
+                            class="flex flex-col items-start justify-start max-mobile-device:items-center max-mobile-device:justify-center max-mobile-device:flex-col-reverse bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
+                            <h3 class="text-white text-[1.2rem] font-bold max-mobile-device:text-[.9rem]">Black</h3>
+                            <div class="flex items-center gap-2.5 max-lp-new:justify-between max-lp-new:w-full max-mobile-device:items-center max-mobile-device:justify-center">
+                                <p class="max-w-[250px] max-mobile-device:hidden text-white text-[.9rem] break-keep">Go anywhere with Uber.
                                     Request a ride,hop in,and go.</p>
-                                <img class="w-auto h-[100px]" src="../assets/products-cards/SedanBlack-013-1.png"
+                                <img class="w-auto h-[100px] max-md-smallest-size:w-full max-md-smallest-size:h-auto" src="../assets/products-cards/SedanBlack-013-1.png"
                                     alt="Black Sedan">
                             </div>
                             <button class="py-[.4rem] px-[.7rem] hover:bg-[var(--hover-btn-show-color)] 
-                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white"><a
-                                    class="inline-block text-[.9rem] font-bold ease-out duration-150 group-hover/prd-btn:scale-[1.1] "
+                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white max-mobile-device:hidden"><a
+                                    class="inline-block text-[.9rem] font-bold ease-out duration-150 group-hover/prd-btn:scale-[1.1]"
                                     href="#">Details</a></button>
                         </div>
                         <div
-                            class="flex flex-col items-start justify-start bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
-                            <h3 class="text-white text-[1.2rem] font-bold">Electric</h3>
-                            <div class="flex items-center gap-2.5">
-                                <p class="max-w-[250px] text-white text-[.9rem] break-keep">Go anywhere with Uber.
+                            class="flex flex-col items-start justify-start max-mobile-device:items-center max-mobile-device:justify-center max-mobile-device:flex-col-reverse bg-[var(--product-card-bg)] p-[.8rem] rounded-[.4rem]">
+                            <h3 class="text-white text-[1.2rem] font-bold max-mobile-device:text-[.9rem]">Electric</h3>
+                            <div class="flex items-center gap-2.5 max-lp-new:justify-between max-lp-new:w-full max-mobile-device:items-center max-mobile-device:justify-center">
+                                <p class="max-w-[250px] max-mobile-device:hidden text-white text-[.9rem] break-keep">Go anywhere with Uber.
                                     Request a ride,hop in,and go.</p>
-                                <img class="w-auto h-[100px]"
+                                <img class="w-auto h-[100px] max-md-smallest-size:w-full max-md-smallest-size:h-auto"
                                     src="../assets/products-cards/Sedan-Sustainability-058-0.png" alt="Sedan Electric">
                             </div>
                             <button class="py-[.4rem] px-[.7rem] hover:bg-[var(--hover-btn-show-color)] 
-                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white"><a
-                                    class="inline-block text-[.9rem] font-bold ease-out duration-150 group-hover/prd-btn:scale-[1.1] "
+                            group/prd-btn cursor-pointer rounded-[.3rem] bg-white max-mobile-device:hidden"><a
+                                    class="inline-block text-[.9rem] font-bold ease-out duration-150 group-hover/prd-btn:scale-[1.1]  "
                                     href="#">Details</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="mt-[3rem] flex flex-col items-start justify-start gap-[2rem] w-full">
+                <div class="relative mt-[3rem] flex flex-col items-start justify-start gap-[2rem] w-full">
                     <div>
                         <h3 class="text-[1.9rem] text-white font-bold">How to request a ride</h3>
                     </div>
-                    <div class="relative grid grid-cols-[repeat(3,1fr)] gap-3.5">
-                        <div class="flex flex-col">
+                    <div class="flex gap-3.5 w-full overflow-x-scroll snap-x max-lp-new:pb-[2rem]">
+                        <div class="flex flex-col max-lp-new:shrink-0 max-lp-new:grow-0 max-lp-new:basis-auto max-lp-new:w-[45%] max-mobile-device:w-full snap-start">
                             <img class="w-full h-auto mb-[1.1rem]"
                                 src="../assets/user-rqs/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy80OTI0NDgyZi00M2IyLTRkMTMtODg1OC1lYzVhODc0ZTIyNmIucG5n.webp"
                                 alt="Product">
@@ -352,7 +404,7 @@
                             <p class="text-white text-[1rem] mt-[.6rem] break-keep">Verify your driver's name, deatails
                                 and your destination, then enter the vehicle</p>
                         </div>
-                        <div class="flex flex-col">
+                        <div class="flex flex-col max-lp-new:shrink-0 max-lp-new:grow-0 max-lp-new:basis-auto max-lp-new:w-[45%] max-mobile-device:w-full snap-start">
                             <img class="w-full h-auto mb-[1.1rem]"
                                 src="../assets/user-rqs/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9jYTQyYmZjNC1lMjhhLTRhZWEtYTE2YS1lMWYwNjQ3MGZhY2UucG5n.webp"
                                 alt="Product">
@@ -360,7 +412,7 @@
                             <p class="text-white text-[1rem] mt-[.6rem] break-keep">Verify your driver's name, deatails
                                 and your destination, then enter the vehicle</p>
                         </div>
-                        <div class="flex flex-col">
+                        <div class="flex flex-col max-lp-new:shrink-0 max-lp-new:grow-0 max-lp-new:basis-auto max-lp-new:w-[45%] max-mobile-device:w-full snap-start">
                             <img class="w-full h-auto mb-[1.1rem]"
                                 src="../assets/user-rqs/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9hNDZlNjBmYS00MzQ1LTQ0NTUtYTNjZC04NmEyMjk4MmMxOTIucG5n.webp"
                                 alt="Product">
@@ -368,21 +420,21 @@
                             <p class="text-white text-[1rem] mt-[.6rem] break-keep">Verify your driver's name, deatails
                                 and your destination, then enter the vehicle</p>
                         </div>
-                        <div class="absolute right-0 bottom-[-70px] flex items-center justify-center gap-2.5">
-                            <p class="text-white text-[1.1rem]">1/2</p>
-                            <div class="flex items-center justify-center gap-1.5">
-                                <button
-                                    class="w-[50px] h-[50px] rounded-[50%] bg-[rgba(255,255,255,0.88)] hover:bg-[var(--hover-btn-show-color)]"><a
-                                        href="#"><i class="fa-solid fa-angle-left"></i></a></button>
-                                <button
-                                    class="w-[50px] h-[50px] rounded-[50%] bg-[rgba(255,255,255,0.88)] hover:bg-[var(--hover-btn-show-color)]"><a
-                                        href="#"><i class="fa-solid fa-angle-right"></i></a></button>
-                            </div>
+                    </div>
+                    <div class="absolute max-lp-new:w-full right-0 bottom-[-70px] flex items-center max-lp-new:justify-end justify-center gap-2.5">
+                        <p class="text-white text-[1.1rem]">1/2</p>
+                        <div class="flex items-center justify-center gap-1.5">
+                            <button
+                                class="w-[50px] h-[50px] rounded-[50%] bg-[rgba(255,255,255,0.88)] hover:bg-[var(--hover-btn-show-color)]"><a
+                                    href="#"><i class="fa-solid fa-angle-left"></i></a></button>
+                            <button
+                                class="w-[50px] h-[50px] rounded-[50%] bg-[rgba(255,255,255,0.88)] hover:bg-[var(--hover-btn-show-color)]"><a
+                                    href="#"><i class="fa-solid fa-angle-right"></i></a></button>
                         </div>
                     </div>
                 </div>
-                <div class="w-full px-[1.5rem] flex items-center justify-between mt-[7rem]">
-                    <div class="flex flex-col items-start justify-start gap-[1.4rem] w-[50%]">
+                <div class="w-full flex items-center justify-between max-lp-new:flex-col max-lp-new:justify-start max-lp-new:items-start mt-[7rem] max-lp-new:gap-[2rem]">
+                    <div class="flex flex-col items-start justify-start gap-[1.4rem] w-[50%] max-lp-new:w-full">
                         <h1 class="text-white text-[1.9rem] font-bold">Planning your next getaway?</h1>
                         <p class="text-white text-[1rem] max-w-[90%] leading-[1.4] ">From weekend road trip to
                             international destination, we've got you covered. Explore transport
@@ -395,8 +447,8 @@
                                 <i class="fa-solid fa-angle-right rotate-[90deg]"></i>
                             </a></button>
                     </div>
-                    <div class="w-[50%]">
-                        <video class="w-full h-auto rounded-[.5rem] hover:scale-[1.1] ease-out duration-100" autoplay
+                    <div class="w-[50%] max-lp-new:w-full">
+                        <video class="w-full h-auto rounded-[.5rem] hover:scale-[1.1] ease-out duration-100 max-lp-new:hover:scale-none" autoplay
                             loop muted
                             src="../assets/video-tr/GO-GET_2026_Event_Web_Travel-Mode_Animated_360p.mp4"></video>
                     </div>
@@ -405,23 +457,23 @@
                     <div>
                         <h3 class="text-white font-bold text-[1.9rem]">More ways to use Uber.</h3>
                     </div>
-                    <div class="flex items-start justify-start w-full">
-                        <div class="w-min flex items-start justify-start flex-col gap-1">
-                            <img class="h-[250px] w-auto max-w-none" src="../assets/user-rqs/rrpp.webp" alt="Uber">
+                    <div class="flex items-start justify-start max-lp-new:justify-between w-full max-mobile-device:overflow-x-scroll max-mobile-device:pb-[2rem] snap-x">
+                        <div class="w-min max-lp-new:w-[50%] flex items-start justify-start flex-col gap-1 max-lp-new:shrink-0 max-lp-new:grow-0 max-lp-new:basis-auto max-mobile-device:w-full snap-start">
+                            <img class="h-[250px] max-lp-new:h-auto max-lp-new:w-full max-w-none" src="../assets/user-rqs/rrpp.webp" alt="Uber">
                             <div class="flex items-start justify-start flex-col gap-[.3rem] mt-[1rem]">
-                                <h3 class=" text-white font-bold">Plan your trip in advance</h3>
-                                <p class="max-w-[85%] text-white text-[.8rem]">Book your ride up to 90 days ahead by
+                                <h3 class=" text-white font-bold max-lp-new:text-[1.2rem]">Plan your trip in advance</h3>
+                                <p class="max-w-[85%] text-white text-[.8rem] max-lp-new:text-[1rem]">Book your ride up to 90 days ahead by
                                     choosing Reserve on Uber.com or in the app.</p>
                                 <button><a
                                         class="relative text-[.9rem] before:ease-out before:duration-300 text-white before:absolute before:bottom-[-1px] before:w-0 before:h-[1.5px] before:bg-[white] hover:before:w-full border-b-2 border-[silver] border-solid"
                                         href="#">Reserve now</a></button>
                             </div>
                         </div>
-                        <div class="w-min flex items-start justify-start flex-col gap-1">
-                            <img class="h-[250px] w-auto max-w-none" src="../assets/user-rqs/rppp2.webp" alt="Uber">
+                        <div class="w-min max-lp-new:w-[50%] flex items-start justify-start flex-col gap-1 max-lp-new:shrink-0 max-lp-new:grow-0 max-lp-new:basis-auto max-mobile-device:w-full snap-start">
+                            <img class="h-[250px] max-lp-new:h-auto max-lp-new:w-full max-w-none" src="../assets/user-rqs/rppp2.webp" alt="Uber">
                             <div class="flex items-start justify-start flex-col gap-[.3rem] mt-[1rem]">
-                                <h3 class=" text-white font-bold ">Plan your trip in advance</h3>
-                                <p class="max-w-[85%] text-white text-[.8rem]">Travel in high-end vehicles with our
+                                <h3 class=" text-white font-bold max-lp-new:text-[1.2rem]">Plan your trip in advance</h3>
+                                <p class="max-w-[85%] text-white text-[.8rem] max-lp-new:text-[1rem]">Travel in high-end vehicles with our
                                     top-rated drivers.</p>
                                 <button><a
                                         class="relative text-[.9rem] before:ease-out before:duration-300 text-white before:absolute before:bottom-[-1px] before:w-0 before:h-[1.5px] before:bg-[white] hover:before:w-full border-b-2 border-[silver] border-solid"
@@ -433,11 +485,11 @@
             </div>
         </section>
         <section class="w-full mt-[13rem] bg-white flex items-start justify-center">
-            <div class="w-[75%] flex flex-col items-center justify-center">
-                <div class="mt-[-8rem]">
+            <div class="w-[75%] max-lp-new:w-[90%] flex flex-col items-center justify-center">
+                <div class="max-mobile-device:hidden mt-[-8rem]">
                     <img src="../assets/user-rqs/ubereat/uberprid.webp" alt="Ubereat" loading="lazy">
                 </div>
-                <div class="flex items-start justify-between gap-[2.5rem] w-full mt-[6rem]">
+                <div class="max-mobile-device:flex-col max-mobile-device:mt-[2.5rem] max-mobile-device:gap-[2.3rem] flex items-start justify-between gap-[2.5rem] w-full mt-[6rem]">
                     <div class="flex flex-col gap-2.5">
                         <img class="w-auto h-auto"
                             src="../assets/user-rqs/ubereat/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy8wNzAzZGJhZi0zMmVkLTQwYzQtODA5YS0yODdhODRjMmY1OTAuanBlZw==.jpg"
@@ -463,29 +515,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center items-center w-full mt-[4rem] mb-[5rem]">
-                    <div class="w-[50%] flex flex-col items-start justify-start gap-[3rem]">
-                        <h1 class="text-[2rem] font-bold max-w-[75%]">Get member savings on rides and delivery</h1>
-                        <p class="max-w-[75%]">Join Uber One for member pricing and exclusive perks with Uber.</p>
+                <div class="flex justify-center items-center max-lp-new:flex-col max-lp-new:items-start max-lp-new:justify-start max-lp-new:gap-[2rem] w-full mt-[4rem] mb-[5rem]">
+                    <div class="w-[50%] max-lp-new:w-full flex flex-col items-start justify-start gap-[3rem] max-lp-new:gap-[1.2rem]">
+                        <h1 class="text-[2rem] font-bold max-w-[75%] max-lp-new:max-w-full max-mobile-device:text-[1.7rem]">Get member savings on rides and delivery</h1>
+                        <p class="max-w-[75%] max-mobile-device:max-w-[90%]">Join Uber One for member pricing and exclusive perks with Uber.</p>
                         <button class="px-[1.4rem] py-[.7rem] bg-black rounded-[.5rem]"><a
                                 class="text-white text-[1rem]" href="#">Sign UP now</a></button>
                     </div>
-                    <div class="w-[50%]">
+                    <div class="w-[50%] max-lp-new:w-full">
                         <img class="w-full" src="../assets/user-rqs/uber-pass.webp" alt="Uberpass">
                     </div>
                 </div>
-                <div class="w-full mb-[-11rem]">
+                <div class="w-full mb-[-11rem] max-lp-new:mb-[-7rem] max-mobile-device:hidden">
                     <img src="../assets/user-rqs/bottom-img-cov.png" alt="Ubereat">
                 </div>
             </div>
         </section>
         <section class="w-full flex flex-col items-center justify-center">
-            <div class="w-[75%] pt-[15rem] flex flex-col items-start justify-start">
+            <div class="w-[75%] max-lp-new:w-[90%] pt-[15rem] max-mobile-device:pt-[2.3rem] flex flex-col items-start justify-start">
                 <div class="flex flex-col items-start justify-start gap-[2rem]">
                     <h3 class="text-white text-[2.3rem] font-bold">Earn with Uber</h3>
-                    <div class="flex gap-[2rem]">
-                        <div class="flex flex-col items-start justify-start gap-[.8rem]">
-                            <img class="h-auto w-full" src="../assets/user-rqs/servc.webp" alt="Service">
+                    <div class="flex gap-[2rem] w-full max-mobile-device:overflow-x-scroll max-mobile-device:overflow-y-hidden max-mobile-device:pb-[2.5rem] snap-x">
+                        <div class="flex flex-col items-start justify-start gap-[.8rem] max-mobile-device:w-full max-mobile-device:max-w-none max-mobile-device:shrink-0 max-mobile-device:grow-0 max-mobile-device:basis-auto snap-start">
+                            <img class="h-auto w-full max-mobile-device:max-w-none max-mobile-device:shrink-0 max-mobile-device:grow-0 max-mobile-device:basis-auto" src="../assets/user-rqs/servc.webp" alt="Service">
                             <h3 class="text-white text-[1.1rem] font-bold">Drive and earn on your schedule</h3>
                             <p class="text-white text-[.9rem] max-w-[85%]">Make money with rides, deliveries, or both.
                                 Use your car or rent one.</p>
@@ -493,7 +545,7 @@
                                     class="text-white pb-[.5rem] border-b-2 border-solid border-[silver] relative before:ease-out before:duration-200 before:absolute before:w-0 before:h-[2px] before:bg-white before:bottom-[-3px] hover:before:w-full text-[.9rem]"
                                     href="#">Sign Up to drive</a></button>
                         </div>
-                        <div class="flex flex-col items-start justify-start gap-[.8rem]">
+                        <div class="flex flex-col items-start justify-start gap-[.8rem] max-mobile-device:w-full max-mobile-device:max-w-none max-mobile-device:shrink-0 max-mobile-device:grow-0 max-mobile-device:basis-auto snap-start">
                             <img class="h-auto w-full" src="../assets/user-rqs/servc2.webp" alt="Service">
                             <h3 class="text-white text-[1.1rem] font-bold">Deliver when you want</h3>
                             <p class="text-white text-[.9rem] max-w-[85%]">Turn your commute into earnings. Just go
@@ -504,9 +556,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full flex items-center justify-between flex-row-reverse mt-[5rem] gap-[10rem]">
-                    <div class="flex flex-col gap-[1.4rem] w-[50%]">
-                        <h1 class="text-white text-[2.5rem] leading-[1.1] font-bold">All the benefits of Uber,
+                <div class="w-full flex items-center justify-between flex-row-reverse mt-[5rem] gap-[10rem] max-lp-new:flex-col-reverse max-lp-new:gap-[1rem]">
+                    <div class="flex flex-col gap-[1.4rem] w-[50%] max-lp-new:w-full">
+                        <h1 class="text-white text-[2.5rem] leading-[1.1] font-bold max-mobile-device:text-[1.8rem]">All the benefits of Uber,
                             reimagined for business</h1>
                         <p class="text-white text-[.9rem]">Uber for Business gives your organization more control,
                             deeper insights, and features built for enterprise users. Manage and track business travel,
@@ -515,32 +567,34 @@
                             class="py-[.8rem] px-[1.1rem] hover:bg-[var(--hover-btn-show-color)] bg-[white] rounded-[.5rem] w-max"><a
                                 href="#" class="text-[1rem] font-bold">Learn More</a></button>
                     </div>
-                    <div class="w-[50%]">
+                    <div class="w-[50%] max-lp-new:w-full">
                         <img class="h-auto w-auto"
                             src="../assets/user-rqs/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy8wOWYyYWUyZi03ODQ2LTQyOWEtYWNkZS0xMjJjYmU5ZTcyOGYucG5n.webp"
                             alt="Ubr Services">
                     </div>
                 </div>
                 <div class="flex flex-col w-full items-start justify-between gap-[1.4rem] mt-[5rem]">
-                    <h1 class="text-white text-[2.5rem] font-bold">It’s easier in the apps</h1>
-                    <div class="flex items-center justify-between gap-[2.5rem] w-full">
-                        <div class="grid grid-cols-[repeat(2,auto)] bg-white w-[50%] p-[.5rem]">
-                            <img class="max-w-none h-[150px] w-auto" src="../assets/user-rqs/qr.jpg" alt="QrCode">
+                    <h1 class="text-white text-[2.5rem] max-lp-new:text-[2rem] font-bold max-mobile-device:text-[1.8rem]">It’s easier in the apps</h1>
+                    <div class="flex items-center justify-between gap-[2.5rem] w-full max-lp-new:flex-col max-lp-new:items-start max-lp-new:justify-start">
+                        <div class="grid grid-cols-[repeat(2,auto)] max-lp-new:items-center max-lp-new:justify-start max-lp-new:gap-[2rem] max-mobile-device:gap-[1.5rem] bg-white w-[50%] max-lp-new:w-full p-[.5rem]">
+                            <img class="max-w-none h-[150px] w-auto max-lp-new:hidden" src="../assets/user-rqs/qr.jpg" alt="QrCode">
+                            <img class="max-w-none h-[150px] w-auto max-lp-new:h-[70px] hidden max-lp-new:block" src="../assets/user-rqs/ubrlogo.svg" alt="">
                             <div class="grid grid-cols-[repeat(1,1fr)] self-center items-center justify-start">
-                                <h3 class="text-[1.5rem] font-bold">Download the Uber app.</h3>
-                                <h4>Scan to download</h4>
+                                <h3 class="text-[1.5rem] font-bold max-mobile-device:text-[1.5rem]">Download the Uber app.</h3>
+                                <h4 class="max-lp-new:hidden">Scan to download</h4>
                             </div>
                         </div>
-                        <div class="grid grid-cols-[repeat(2,auto)] bg-white w-[50%] p-[.5rem]">
-                            <img class="max-w-none h-[150px] w-auto" src="../assets/user-rqs/qr.jpg" alt="QrCode">
+                        <div class="grid grid-cols-[repeat(2,auto)] max-lp-new:items-center max-lp-new:justify-start max-lp-new:gap-[2rem] max-mobile-device:gap-[1.5rem] bg-white w-[50%] max-lp-new:w-full p-[.5rem]">
+                            <img class="max-w-none h-[150px] w-auto max-lp-new:hidden" src="../assets/user-rqs/qr.jpg" alt="QrCode">
+                            <img class="max-w-none h-[150px] w-auto max-lp-new:h-[70px] hidden max-lp-new:block" src="../assets/user-rqs/uberlogis.svg" alt="">
                             <div class="grid grid-cols-[repeat(1,1fr)] self-center items-center justify-start">
-                                <h3 class="text-[1.5rem] font-bold">Download the Uber app.</h3>
-                                <h4>Scan to download</h4>
+                                <h3 class="text-[1.5rem] font-bold max-mobile-device:text-[1.5rem]">Download the Uber app.</h3>
+                                <h4 class="max-lp-new:hidden">Scan to download</h4>
                             </div>
                         </div>
                     </div>
                     <div class="mt-[5rem] ml-auto">
-                        <h2><a class="relative flex items-center text-white hover:text-[gray] group/inside-right-angel"
+                        <h2><a class="relative max-lp-new:hidden flex items-center text-white hover:text-[gray] group/inside-right-angel"
                                 href="#">How the Uber and Uber Eats apps and websites work <i
                                     class="fa-solid fa-angle-right absolute ease-in duration-100 right-[-1rem] text-[.8rem] group-hover/inside-right-angel:right-[-1.3rem]"></i></a>
                         </h2>
@@ -551,16 +605,15 @@
     </main>
     <footer>
         <div class="w-full pb-[.5rem] bg-black flex items-center justify-center">
-            <div class="w-[75%] flex flex-col items-start justify-start gap-[3.5rem]">
+            <div class="w-[75%] max-lp-new:w-[90%] flex flex-col items-start justify-start gap-[3.5rem]">
                 <div class="flex flex-col gap-[2.5rem]">
                     <h1 class="text-white text-[1.4rem] font-bold">Uber</h1>
                     <h2 class="text-white text-[1.1rem]"><a href="#">Visit help center</a></h2>
                 </div>
                 <div class="w-full">
-                    <nav class="w-full flex items-start justify-start gap-[14rem]">
+                    <nav class="w-full flex items-start justify-start gap-[10rem] max-lp-new:grid max-lp-new:grid-cols-[repeat(2,1fr)] max-lp-new:gap-[4rem] max-mobile-device:grid-cols-[repeat(1,1fr)]">
                         <ul class="flex flex-col gap-[.8rem]">
-                            <li><a class="text-white text-[1.1rem] hover:text-[silver] font-bold" href="#">Company</a>
-                            </li>
+                            <li><a class="text-white text-[1.1rem] hover:text-[silver] font-bold" href="#">Company</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">About us</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Our offerings</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Newsroom</a></li>
@@ -572,28 +625,24 @@
                             </li>
                         </ul>
                         <ul class="flex flex-col gap-[.8rem]">
-                            <li><a class="text-white text-[1.1rem] hover:text-[silver] font-bold" href="#">Products</a>
-                            </li>
+                            <li><a class="text-white text-[1.1rem] hover:text-[silver] font-bold" href="#">Products</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Ride</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Drive</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Deliver</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Eat</a></li>
-                            <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Uber for Business</a>
-                            </li>
+                            <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Uber for Business</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Uber Freight</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Gift cards</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Uber Health</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Merchant</a></li>
                         </ul>
                         <ul class="flex flex-col gap-[.8rem]">
-                            <li><a class="text-white text-[1.1rem] hover:text-[silver] font-bold" href="#">Global
-                                    citizenship</a></li>
+                            <li><a class="text-white text-[1.1rem] hover:text-[silver] font-bold" href="#">Global citizenship</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Safety</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Sustainability</a></li>
                         </ul>
                         <ul class="flex flex-col gap-[.8rem]">
-                            <li><a class="text-white text-[1.1rem] hover:text-[silver] font-bold" href="#">Travel</a>
-                            </li>
+                            <li><a class="text-white text-[1.1rem] hover:text-[silver] font-bold" href="#">Travel</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Reserve</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Airports</a></li>
                             <li><a class="text-white text-[.8rem] hover:text-[silver]" href="#">Hotels</a></li>
@@ -601,28 +650,45 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="w-full flex items-center">
+                <div class="w-full flex items-center max-lp-new:flex-col max-lp-new:gap-[1rem] max-lp-new:items-start max-lp-new:justify-center">
                     <div class="flex items-center justify-center gap-[.3rem] w-max">
-                        <p class="cursor-pointer px-[.5rem] py-[.7rem] flex items-center justify-center bg-[var(--social-link-color)] rounded-[.3rem] hover:bg-[var(--social-link-hvr-color)] text-[1.5rem]"><i class="fa-brands fa-x-twitter" style="color: white;"></i></p>
-                        <p class="cursor-pointer px-[.5rem] py-[.7rem] flex items-center justify-center bg-[var(--social-link-color)] rounded-[.3rem] hover:bg-[var(--social-link-hvr-color)] text-[1.5rem]"><i class="fa-brands fa-instagram" style="color: white;"></i></p>
-                        <p class="cursor-pointer px-[.5rem] py-[.7rem] flex items-center justify-center bg-[var(--social-link-color)] rounded-[.3rem] hover:bg-[var(--social-link-hvr-color)] text-[1.5rem]"><i class="fa-brands fa-youtube" style="color: white;"></i></p>
-                        <p class="cursor-pointer px-[.5rem] py-[.7rem] flex items-center justify-center bg-[var(--social-link-color)] rounded-[.3rem] hover:bg-[var(--social-link-hvr-color)] text-[1.5rem]"><i class="fa-brands fa-linkedin" style="color: white;"></i></p>
+                        <p
+                            class="cursor-pointer px-[.5rem] py-[.7rem] flex items-center justify-center bg-[var(--social-link-color)] rounded-[.3rem] hover:bg-[var(--social-link-hvr-color)] text-[1.5rem]">
+                            <i class="fa-brands fa-x-twitter" style="color: white;"></i>
+                        </p>
+                        <p
+                            class="cursor-pointer px-[.5rem] py-[.7rem] flex items-center justify-center bg-[var(--social-link-color)] rounded-[.3rem] hover:bg-[var(--social-link-hvr-color)] text-[1.5rem]">
+                            <i class="fa-brands fa-instagram" style="color: white;"></i>
+                        </p>
+                        <p
+                            class="cursor-pointer px-[.5rem] py-[.7rem] flex items-center justify-center bg-[var(--social-link-color)] rounded-[.3rem] hover:bg-[var(--social-link-hvr-color)] text-[1.5rem]">
+                            <i class="fa-brands fa-youtube" style="color: white;"></i>
+                        </p>
+                        <p
+                            class="cursor-pointer px-[.5rem] py-[.7rem] flex items-center justify-center bg-[var(--social-link-color)] rounded-[.3rem] hover:bg-[var(--social-link-hvr-color)] text-[1.5rem]">
+                            <i class="fa-brands fa-linkedin" style="color: white;"></i>
+                        </p>
                     </div>
-                    <div class="ml-auto flex items-center justify-between w-auto gap-[.3rem]">
-                        <button class="text-white text-[.9rem] font-bold cursor-pointer flex items-center gap-[.2rem] w-max p-[.4rem] rounded-[.3rem] bg-[var(--social-link-color)] hover:bg-[var(--social-link-hvr-color)]">
+                    <div class="ml-auto flex items-center justify-between w-auto gap-[.3rem] max-lp-new:w-full max-lp-new:justify-start">
+                        <button
+                            class="text-white text-[.9rem] font-bold cursor-pointer flex items-center gap-[.2rem] w-max p-[.4rem] rounded-[.3rem] bg-[var(--social-link-color)] hover:bg-[var(--social-link-hvr-color)]">
                             <i class="fa-solid fa-earth-americas text-[.9rem]" style="color: white;"></i>
                             English
                         </button>
-                        <button class="text-white text-[.9rem] font-bold cursor-pointer flex items-center gap-[.2rem] w-max p-[.4rem] rounded-[.3rem] bg-[var(--social-link-color)] hover:bg-[var(--social-link-hvr-color)]"><i class="fa-solid fa-location-dot text-[.9rem]" style="color: white;"></i>Amesterdam</button>
+                        <button
+                            class="text-white text-[.9rem] font-bold cursor-pointer flex items-center gap-[.2rem] w-max p-[.4rem] rounded-[.3rem] bg-[var(--social-link-color)] hover:bg-[var(--social-link-hvr-color)]"><i
+                                class="fa-solid fa-location-dot text-[.9rem]"
+                                style="color: white;"></i>Amesterdam</button>
                     </div>
                 </div>
                 <div class="flex gap-[.5rem]">
-                    <a href="#"><img class="h-[40px] w-auto" src="../assets/user-rqs/google (1).svg" alt="GooglePlay"></a>
+                    <a href="#"><img class="h-[40px] w-auto" src="../assets/user-rqs/google (1).svg"
+                            alt="GooglePlay"></a>
                     <a href="#"><img class="h-[40px] w-auto" src="../assets/user-rqs/google (2).svg" alt="AppStore"></a>
                 </div>
-                <div class="w-full flex items-center">
+                <div class="w-full flex items-center max-lp-new:flex-col max-lp-new:items-start max-lp-new:justify-center">
                     <p class="text-white text-[.7rem]">&copy;2026 Uber Technologies Inc.</p>
-                    <div class="ml-auto flex gap-[1.7rem]">
+                    <div class="ml-auto flex gap-[1.7rem] max-lp-new:w-full">
                         <a class="text-[silver] hover:text-[gray] text-[.7rem]" href="#">Privacy</a>
                         <a class="text-[silver] hover:text-[gray] text-[.7rem]" href="#">Accessibility</a>
                         <a class="text-[silver] hover:text-[gray] text-[.7rem]" href="#">Terms</a>
